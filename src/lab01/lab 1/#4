@@ -1,6 +1,0 @@
-minet=int(input("Минуты:"))
-hour=minet//60
-newminet=minet%60
-print(f"{hour}:{newminet}")
-
-
