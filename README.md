@@ -32,5 +32,9 @@
 
 ![Задание 5](images/lab01/img05.png)
 
+(images\lab01\img06.png)
+
+
+
 
 
