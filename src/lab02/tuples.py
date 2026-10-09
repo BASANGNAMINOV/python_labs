@@ -25,8 +25,7 @@ def format_record(rec: tuple[str, str, int | float]) -> str:
     formatted_name = f"{surname} {initials}"
 
     return f"{formatted_name}, гр. {group.strip()}, GPA {gpa:.2f}"
-print(("Иванов Иван Иванович", "BIVT-25", 4.6),"=>",format_record(("Иванов Иван Иванович", "BIVT-25", 4.6)))  
-print(("Петров Петр ", "IKBO-12", 5.0),"=>",format_record(("Петров Петр ", "IKBO-12", 5.0)))  
-print(("Петров Пётр Петрович", "IKBO-12" , 5.0),"=>",format_record(("Петров Пётр Петрович", "IKBO-12" , 5.0)))  
-print(("  сидорова  анна  сергеевна ", "ABB-01", 3.9999),"=>",format_record(("  сидорова  анна  сергеевна ", "ABB-01", 3.9999)))  
-
+#print(("Иванов Иван Иванович", "BIVT-25", 4.6),"=>",format_record(("Иванов Иван Иванович", "BIVT-25", 4.6)))  
+#print(("Петров Петр ", "IKBO-12", 5.0),"=>",format_record(("Петров Петр ", "IKBO-12", 5.0)))  
+#print(("Петров Пётр Петрович", "IKBO-12" , 5.0),"=>",format_record(("Петров Пётр Петрович", "IKBO-12" , 5.0)))  
+#print(("  сидорова  анна  сергеевна ", "ABB-01", 3.9999),"=>",format_record(("  сидорова  анна  сергеевна ", "ABB-01", 3.9999)))  
