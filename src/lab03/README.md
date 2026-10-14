@@ -43,19 +43,32 @@ if __name__ == "__main__":
     print("normalize")
     for test in ["ПрИвЕт\nМИр\t", "ёжик, Ёлка", "Hello\r\nWorld", "  двойные   пробелы  "]:
         print(repr(test), "=>", repr(normalize(test)))
+    assert normalize("ПрИвЕт\nМИр\t") == "привет мир"
+    assert normalize("ёжик, Ёлка") == "ежик, елка"  
     print()
 
     print("tokenize")
     for test in ["привет мир", "hello,world!!!", "по-настоящему круто", "2025 год", "emoji 😀 не слово"]:
         print(repr(test), "=>", tokenize(test))
+    assert tokenize("привет, мир!") == ["привет", "мир"]
+    assert tokenize("по-настоящему круто") == ["по-настоящему", "круто"]
+    assert tokenize("2025 год") == ["2025", "год"]
 
     print()
     print("top_n")
     freq = count_freq(["a", "b", "a", "c", "b", "a"])
+    assert freq == {"a":3, "b":2, "c":1}
+    assert top_n(freq, 2) == [("a",3), ("b",2)]
     print(freq, "=>", top_n(freq, 2))
     freq = count_freq(["bb", "aa", "bb", "aa", "cc"])
-    print(freq, "=>", top_n(freq, 2)) 
+    assert top_n(freq, 2) == [("aa",2), ("bb",2)]
+    print(freq, "=>", top_n(freq, 2))
 ```
+`normalize` применяет `casefold()` (или `lower()`), заменяет `ё` на `е`,
+превращает `\\t`, `\\r`, `\\n` в пробелы, схлопывает пробелы и обрезает края.
+`tokenize` использует шаблон `\\w+(?:-\\w+)*`: цифры и подчёркивания
+считаются частью слова, дефис разрешён внутри слова. `top_n` сортирует пары
+по ключу `(-частота, слово)`.
 ### Результат:
 
 ![Результат](/images/lab03/ex1,2,3.png)
@@ -88,7 +101,22 @@ else:
 
     for word in sort_freq:
         print(f"{word[0]:<{max_len}} | {word[1]}")  
+
 ```
+
+Запуск из корня проекта:
+
+```powershell
+python -m src.lab03.text_stats
+```
+```powershell
+"Привет, мир! Привет!!!" 
+```
+Команда смотрит строку `input()` ,также узнает кол-во слов , уникальных слов и топ 5 самых частых
+
+
+
+ 
 ## Результат 
 ![Задание B](/images/lab03/ex4.png)
 
