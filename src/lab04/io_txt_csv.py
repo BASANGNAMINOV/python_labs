@@ -54,5 +54,5 @@ def write_csv(rows: Iterable[Sequence[object]], path: str | Path,
 if __name__ == '__main__':
     print(read_text('data/lab04/input.txt'))
 
-    write_csv([("word", "count"), ("test", 3)], "data/lab_04/check.csv")
+    write_csv([("word", "count"), ("test", 3)], "data/lab04/check.csv")
     print('csv создан')
