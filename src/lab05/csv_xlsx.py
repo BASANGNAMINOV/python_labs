@@ -3,7 +3,7 @@ from pathlib import Path
 from openpyxl import Workbook
 
 def check_ext(file_path: str, ext: str) -> None:
-    """Проверяет расширение файла."""
+    """Проверяет расширение файла"""
     if Path(file_path).suffix.lower() != ext:
         raise ValueError("Неверное расширение файла")
 
