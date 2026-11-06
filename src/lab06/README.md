@@ -91,42 +91,49 @@ python -m src.lab06.cli_convert csv2xlsx --in data/lab05/samples/people.csv --ou
 python -m src.lab06.cli_text --help
 ```
 ![1](../../images/lab06/cli_text.png)
+
 Справка команды `cat`:
 
 ```powershell
 python -m src.lab06.cli_text cat --help
 ```
 ![2](../../images/lab06/cli_text%20cat.png)
+
 Справка команды `stats`:
 
 ```powershell
 python -m src.lab06.cli_text stats --help
 ```
 ![3](../../images/lab06/cli_text%20stats.png)
+
 Справка модуля преобразования:
 
 ```powershell
 python -m src.lab06.cli_convert --help
 ```
 ![4](../../images/lab06//cli_convert.png)
+
 Справка команды `json2csv`:
 
 ```powershell
 python -m src.lab06.cli_convert json2csv --help
 ```
 ![5](../../images/lab06/cli_convert%20json2csv.png)
+
 Справка команды `csv2json`:
 
 ```powershell
 python -m src.lab06.cli_convert csv2json --help
 ```
 ![6](../../images/lab06/cli_convert%20csv2json.png)
+
 Справка команды `csv2xlsx`:
 
 ```powershell
 python -m src.lab06.cli_convert csv2xlsx --help
 ```
 ![7](../../images/lab06/cli_convert%20csv2xlsx.png)
+
 Ожидаемый результат: для каждого модуля и подкоманды отображаются описание
 и доступные аргументы.
 
