@@ -127,7 +127,7 @@ python -m src.lab06.cli_convert csv2json --help
 ```
 ![6](../../images/lab06/cli_convert%20csv2json.png)
 
-Справка команды `csv2xlsx`:
+Справка команды `csv2xlsx` :
 
 ```powershell
 python -m src.lab06.cli_convert csv2xlsx --help
