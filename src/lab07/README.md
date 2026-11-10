@@ -7,16 +7,13 @@ python -m src.lab07.bench   # бенчмарк -> data/lab07/bench.csv
 ```
 
 ## Результат `check.py`
-```
-OK: 798 проверок
-```
-<!-- вставь свой вывод и скриншот -->
+
+![Checkphoto](/images/lab07/check.png)
+
 
 ## Таблица бенчмарка
-<!-- ВСТАВЬ сюда содержимое СВОЕГО data/lab07/bench.csv после запуска bench.py -->
-| task | n | impl | seconds |
-|------|---|------|---------|
-| ... | ... | ... | ... |
+
+![bebr0](/images/lab07/bench.png)
 
 ## Выводы
 
