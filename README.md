@@ -7,6 +7,6 @@
 | 4 | Файлы: TXT/CSV и отчёты по текстовой статистике | [Открыть README](/src/lab04/README.md)|
 | 5 | JSON и конвертации (JSON↔CSV, CSV→XLSX)| [Открыть README](/src/lab05/README.md)|
 | 6 | CLI‑утилиты с argparse| [Открыть README](/src/lab06/README.md)|
-| 7 | Поиск, сортировка и измерение времени [Открыть README](/src/lab07/README.md)|
+| 7 | Поиск, сортировка и измерение времени | [Открыть README](/src/lab07/README.md)|
 
 
